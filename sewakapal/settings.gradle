@@ -1,0 +1,5 @@
+include ':app'
+//include other modules here
+//include ':analytics'
+//include ':core'
+//include ':maps'

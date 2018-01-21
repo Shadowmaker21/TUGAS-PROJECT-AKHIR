@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="us.qampus.sewakapal" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name=".MyApplication">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC3JE9R343M11myxyfiJBibXHnq9C2f83c"/>
+        <activity android:name="us.qampus.sewakapal.ui.SewaKapalActivity"
+            android:label="@string/sewaKapalActivity"
+        />
+        <activity android:name="us.qampus.sewakapal.ui.DataKapalActivity"
+            android:label="@string/dataKapalActivity"
+        />
+        <activity android:name="us.qampus.sewakapal.ui.DataKapalDetailActivity"
+        />
+        <activity android:name="us.qampus.sewakapal.ui.DataKapalFormFormActivity"
+            android:label="@string/dataKapalFormFormActivity"
+        />
+        <activity android:name="us.qampus.sewakapal.ui.MapsActivity"
+            android:label="@string/mapsActivity"
+        />
+        <activity android:name="us.qampus.sewakapal.ui.MapsDetailActivity"
+        />
+        <activity android:name="us.qampus.sewakapal.ui.SewaKapalMainActivity"
+            android:label="@string/sewaKapalMainActivity"
+            android:theme="@style/AppTheme.Drawer">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.LoginActivity"
+            android:theme="@style/NoActionBar"
+            android:noHistory="true"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+    </application>
+
+</manifest>
